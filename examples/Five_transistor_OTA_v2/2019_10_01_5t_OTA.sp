@@ -15,12 +15,12 @@
 ** Library name: DC_converter
 ** Cell name: 2018_11_09_ASAP7_ota
 ** View name: schematic
-m5 net2 net2 0 0 nmos w=270e-9 l=20e-9 nfin=10
-m4 net10 net2 0 0 nmos w=270e-9 l=20e-9 nfin=40
-m3 vout net15 net10 0 nmos w=270e-9 l=20e-9 nfin=160
-m0 net8 net17 net10 0 nmos w=270e-9 l=20e-9 nfin=160
-m2 vout net8 vdd vdd pmos w=270e-9 l=20e-9 nfin=100
-m1 net8 net8 vdd vdd pmos w=270e-9 l=20e-9 nfin=100
+m5 net2 net2 0 0 nmos w=270e-9 l=20e-9 nfin=5 nf=2
+m4 net10 net2 0 0 nmos w=270e-9 l=20e-9 nfin=5 nf=8
+m3 vout net15 net10 0 nmos w=270e-9 l=20e-9 nfin=10 nf=16
+m0 net8 net17 net10 0 nmos w=270e-9 l=20e-9 nfin=10 nf=16
+m2 vout net8 vdd vdd pmos w=270e-9 l=20e-9 nfin=10 nf=10
+m1 net8 net8 vdd vdd pmos w=270e-9 l=20e-9 nfin=10 nf=10
 
 **testbench
 v2 net15 0 DC=675e-3 AC 500e-3 180
