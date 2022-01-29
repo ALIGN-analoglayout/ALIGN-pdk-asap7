@@ -24,8 +24,7 @@ class MOSGenerator(DefaultCanvas):
         self.finDummy = (self.finsPerUnitCell-fin)//2
         self.lFin = height
         assert self.finDummy >= 8, "number of fins in the transistor must be less than height"
-        assert fin > 3, "number of fins in the transistor must be more than 2"
-        assert fin % 2 == 0, "number of fins in the transistor must be even" 
+        assert fin > 1, "number of fins in the transistor must be more than 2" 
         assert gateDummy > 0
         self.unitCellLength = self.gatesPerUnitCell* self.pdk['Poly']['Pitch']
         self.activeOffset = self.unitCellHeight//2 -self.pdk['Fin']['Pitch']//2
